@@ -1,0 +1,271 @@
+// .video-block{
+// 	position: relative;
+// 	width: 100%;
+// 	cursor: pointer;
+// 	overflow: hidden;
+// 	border-radius: $r;
+
+// 	&:before{
+// 		content: '';
+// 		display: block;
+// 		padding-top: 56.25%;
+// 	}
+
+// 	.video-preview{
+// 		width: 100%;
+// 		height: 100%;
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		object-fit: cover;
+// 		object-position: center center;
+// 		font-family: 'object-fit: cover; object-position: center center;';
+// 	}
+
+// 	&:after{
+// 		content: '';
+// 		display: block;
+// 		width: 100%;
+// 		height: 100%;
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		background: #2191a7;
+// 		opacity: .2;
+// 		transition: all $t;
+// 	}
+
+// 	&:hover{
+// 		&:after{
+// 			opacity: .4;
+// 		}
+// 	}
+// }
+
+.video{
+	position: relative;
+	max-width: 920px;
+	margin: 0 auto;
+	overflow: hidden;
+	cursor: pointer;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 100%;
+		padding-top: 56.25%;
+		z-index: 3;
+		position: relative;
+		background: #000;
+		border-radius: $r;
+		transition: all $t;
+	}
+
+	.play-btn{
+		appearance: none;
+		box-shadow: 0;
+		border: 0;
+		width: 56px;
+		height: 56px;
+		background: transparent;
+		border-radius: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all $t;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+		outline: none !important;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 28px 0 28px 47px;
+			border-color: transparent transparent transparent #fff;
+			transition: all $t;
+
+			@media screen and (max-width: 767px){
+				border-width: 14px 0 14px 24px;
+			}
+		}
+	}
+
+	.video-preview{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		transition: all .5s;
+	}
+
+	video{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		border-radius: $r;
+		object-fit: contain;
+	}
+
+	&.playing{
+		.play-btn{
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&:before{
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+	&:hover{
+		.video-preview{
+			transform: scale(1.03);
+		}
+
+		.play-btn{
+			transform: translate(-50%, -50%) scale(1.1);
+
+			&:before{
+				border-left-color: $primary;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		width: calc(100% + 10px * 2);
+		margin-left: -10px;
+		margin-right: -10px;
+
+		&:before{
+			border-radius: 0;
+		}
+
+		.video-iframe,
+		iframe{
+			border-radius: 0;
+		}
+	}
+}
+
+.video-block{
+	position: relative;
+	max-width: 920px;
+	margin: 0 auto;
+	overflow: hidden;
+	cursor: pointer;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 100%;
+		padding-top: 56.25%;
+		z-index: 3;
+		position: relative;
+		background: #000;
+		border-radius: $r;
+	}
+
+	.play-btn{
+		appearance: none;
+		box-shadow: 0;
+		border: 0;
+		width: 56px;
+		height: 56px;
+		background: transparent;
+		border-radius: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all $t;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+		outline: none !important;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 28px 0 28px 47px;
+			border-color: transparent transparent transparent #fff;
+			transition: all $t;
+
+			@media screen and (max-width: 767px){
+				border-width: 14px 0 14px 24px;
+			}
+		}
+	}
+
+	.video-preview{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		transition: all .5s;
+	}
+
+	.video-iframe,
+	iframe{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 4;
+		border-radius: $r;
+	}
+
+	&.playing{
+		.play-btn{
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	&:hover{
+		.video-preview{
+			transform: scale(1.03);
+		}
+
+		.play-btn{
+			transform: translate(-50%, -50%) scale(1.1);
+
+			&:before{
+				border-left-color: $primary;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		width: calc(100% + 10px * 2);
+		margin-left: -10px;
+		margin-right: -10px;
+
+		&:before{
+			border-radius: 0;
+		}
+
+		.video-iframe,
+		iframe{
+			border-radius: 0;
+		}
+	}
+}

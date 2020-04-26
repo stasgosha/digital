@@ -1,0 +1,208 @@
+.first-screen-section{
+	position: relative;
+	padding-top: 257px;
+	padding-bottom: 212px;
+
+	.section-bg{
+		width: 1097px;
+		height: 1281px;
+		position: absolute;
+		left: 50%;
+		top: -205px;
+		transform: translateX(-814px);
+		z-index: -1;
+
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-decorations{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+
+		.left-decoration{
+			position: absolute;
+			left: -258px;
+			width: 0;
+
+			.decor-text{
+				transform: translateX(-50%) rotate(-90deg);
+			}
+		}
+
+		.right-decoration{
+			position: absolute;
+			right: -293px;
+			width: 0;
+
+			.decor-text{
+				transform: translateX(-50%) rotate(-90deg);
+			}
+		}
+	}
+
+	.section-inner{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.section-content{
+		max-width: 620px;
+
+		.section-text{
+			margin-bottom: 55px;
+
+			p{
+				font-size: 15px;
+			}
+		}
+	}
+
+	.section-features{
+		max-width: 450px;
+
+		.feature-card{
+			margin-bottom: 20px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		padding-top: 172px;
+		padding-bottom: 60px;
+
+		.section-bg{
+			left: -491px;
+			top: -246px;
+			transform: translateX(0);
+		}
+
+		.section-content{
+			width: 470px;
+			margin-right: 50px;
+
+			.section-text{
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.section-inner{
+			flex-direction: column;
+		}
+
+		.section-content{
+			width: 100%;
+			max-width: unset;
+			margin-right: 0;
+			margin-bottom: 60px;
+		}
+
+		.section-features{
+			width: 100%;
+			max-width: unset;
+			padding-left: 40px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.section-content{
+			margin-bottom: 36px;
+
+			.btn{
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 100%;
+				max-width: 320px;
+			}
+		}
+	}
+}
+
+.feature-card{
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.11);
+	border-radius: $r;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.card-duration{
+		background: #fff;
+		width: 80px;
+		height: 86px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		border: 4px solid $accent;
+		border-radius: $r;
+		margin-left: -40px;
+		margin-right: 25px;
+		flex: none;
+
+		font-family: $second-font;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #7a7a7a;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 19px;
+			height: 4px;
+			background: $accent;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 100%;
+		}
+
+		strong{
+			font-weight: 900;
+			font-size: 54px;
+			line-height: 38px;
+			color: $text-color;
+			margin-top: 8px;
+		}
+	}
+
+	.card-content{
+		font-size: 17px;
+		line-height: 1.4;
+
+		strong{
+			color: $primary;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.card-content{
+			font-size: 15px;
+		}
+	}
+}

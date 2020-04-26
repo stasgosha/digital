@@ -1,0 +1,38 @@
+[class^="icon-"], [class*=" icon-"]{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../img/icons-sprite.png) no-repeat;
+}
+
+.icon-arrow-right { background-position: -1px -0px; width: 40px; height: 12px; }
+.icon-clock-big { background-position: -1px -13px; width: 40px; height: 40px; }
+.icon-envelope-big { background-position: -1px -54px; width: 38px; height: 30px; }
+.icon-phone-big { background-position: -1px -85px; width: 33px; height: 48px; }
+.icon-location-big { background-position: -1px -134px; width: 29px; height: 40px; }
+.icon-girl { background-position: -1px -175px; width: 22px; height: 15px; }
+.icon-scissors { background-position: -1px -191px; width: 22px; height: 24px; }
+.icon-eye { background-position: -1px -216px; width: 21px; height: 17px; }
+.icon-tube { background-position: -1px -234px; width: 21px; height: 20px; }
+.icon-body-star { background-position: -1px -255px; width: 19px; height: 24px; }
+.icon-vk.gradient { background-position: -21px -255px; width: 18px; height: 10px; }
+.icon-vk { background-position: -21px -266px; width: 18px; height: 10px; }
+.icon-metro { background-position: -24px -175px; width: 16px; height: 13px; }
+.icon-instagram.gradient { background-position: -24px -189px; width: 15px; height: 15px; }
+.icon-instagram { background-position: -24px -205px; width: 15px; height: 15px; }
+.icon-clock { background-position: -23px -221px; width: 14px; height: 14px; }
+.icon-phone.gradient { background-position: -23px -236px; width: 14px; height: 14px; }
+.icon-bottle { background-position: -21px -277px; width: 13px; height: 24px; }
+.icon-location { background-position: -1px -280px; width: 12px; height: 16px; }
+.icon-phone { background-position: -1px -297px; width: 12px; height: 12px; }
+.icon-facebook.gradient { background-position: -31px -134px; width: 8px; height: 15px; }
+.icon-facebook { background-position: -31px -150px; width: 8px; height: 15px; }
+
+.icon-play{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 22px 0 22px 36px;
+	border-color: transparent transparent transparent #fff;
+	transform: translateX(15%);
+}

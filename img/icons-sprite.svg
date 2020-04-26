@@ -1,0 +1,51 @@
+<svg width="0" height="0" class="hidden">
+
+	<symbol viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="phone">
+		<path fill-rule="nonzero" d="M12 16.97l-2.64-5.1-1.55.76c-1.68.81-5.1-5.87-3.46-6.75l1.57-.77L3.3 0 1.72.78c-5.4 2.82 3.17 19.49 8.7 16.96l1.58-.77z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="person">
+		<path fill-rule="nonzero" d="M19.09 16.59c-3.16-.73-6.1-1.37-4.67-4.05C18.75 4.37 15.57 0 11 0 6.34 0 3.24 4.54 7.58 12.54c1.46 2.7-1.58 3.34-4.67 4.05C.18 17.22 0 18.55 0 20.86V22h9.61l.65-2.75h1.48l.65 2.75h9.6v-1.14c.01-2.3-.17-3.64-2.9-4.27zm-7.55 1.74h-1.07l-.83-1.83h2.75l-.85 1.83z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="team-circle">
+		<path fill-rule="nonzero" d="M6.72 20.5a9.94 9.94 0 0010.55 0l1.24 1.58a11.94 11.94 0 01-13.03 0l1.24-1.59zM24 19h-6c0-1.1.9-2 2-2h2a2 2 0 012 2zM6 19H0c0-1.1.9-2 2-2h2a2 2 0 012 2zm6-11a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm.3 1.83h-.6v.65c-1.2.17-1.83.91-1.83 1.75 0 1.49 1.74 1.71 2.31 1.98.78.35.63 1.07-.07 1.23-.6.13-1.39-.1-1.97-.33l-.28 1c.55.29 1.2.44 1.83.45v.6h.62v-.64c1-.14 1.83-.7 1.83-1.75 0-1.3-1.37-1.67-2.41-2.16-.64-.33-.56-1.12.35-1.17a3.9 3.9 0 011.5.28l.22-1a5.67 5.67 0 00-1.5-.27v-.62zM21 12a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5zM3 12a2.25 2.25 0 110 4.5A2.25 2.25 0 013 12zM8 .68v2.15A10.03 10.03 0 002.2 10H.17A12.03 12.03 0 018 .69zm8 0a12.03 12.03 0 017.83 9.3L21.8 10A10.03 10.03 0 0016 2.83V.68zM15 7H9c0-1.1.9-2 2-2h2a2 2 0 012 2zm-3-7a2.25 2.25 0 110 4.5A2.25 2.25 0 0112 0z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="chess">
+		<path fill-rule="nonzero" d="M16.38 5.61c.3 0 .53-.23.53-.53v-.53H9.1v.53c0 .3.24.53.53.53h6.75zM18.28 4.15v-.88c0-.49-.4-.88-.88-.88H8.6c-.48 0-.88.39-.88.88v.88h10.55zM15.99 6.02h-5.96v1.06h5.96V6.02zM14.8 9.56h-3.66v9.61h3.65V9.56z" fill="#fff"/><path d="M10.74 19.17V9.36c0-.11.1-.2.2-.2H15c.11 0 .2.09.2.2v9.81h2.49l-.66-4.53L16 7.48h-5.97l-.48 3.32-1.2 8.37h2.4zM16.63 0h-1.31v1.18a.2.2 0 01-.2.2h-1.38a.2.2 0 01-.2-.2V0h-1.06v1.18a.2.2 0 01-.2.2H10.9a.2.2 0 01-.2-.2V0H9.38v1.98h7.25V0zM7.97 19.57v1.07h10.08v-1.07H7.97zM22.27 8.2a1.96 1.96 0 01-.47.13h-.04l-.09.01h-.04a2 2 0 01-.25 0h-.14l-.03-.01-.11-.02-.06-.01-.06-.02-.06-.02h-.03l-.14-.06-.03-.01a1.96 1.96 0 01-.25-.13l-.04-.03v.46h2.15v-.46c-.1.07-.2.12-.3.17zM25.13 8.89h-7.25V10h7.25V8.9zM18.45 20.5h6.25l-.4-2.78-.76-5.27h-4.07l-1.02 7.09v.96zM21.42 7.95h.08a1.58 1.58 0 10-.08 0zM23.52 11.42h-4.04v.62h4.04v-.62zM23.86 11.02c.17 0 .31-.14.31-.3v-.32h-5.34v.31c0 .17.14.31.31.31h4.72zM19.33 21.8a1.27 1.27 0 00-1.05-.75H7.84c-.7 0-1.26.56-1.26 1.25v1.27h12.86V22.3c0-.17-.04-.34-.11-.5zM24.96 20.9h-5.9.01l.07.05.01.01.16.13.01.01.06.06.01.01c.1.1.18.22.25.35h5.32v-.62zM6.87 20.9H.97v.62H6.3c.13-.26.33-.47.57-.62zM4.35 7.95h.08a1.58 1.58 0 10-.08 0zM25.11 21.92h-5.32l.02.08v.03l.01.06v.03l.01.07V23.57h6.1v-.83a.82.82 0 00-.82-.82zM0 22.74v.83h6.1V22.3c0-.13.01-.25.04-.38H.82a.82.82 0 00-.82.82zM6.45 11.42H2.41v.62h4.04v-.62zM8.05 10V8.9H.81V10h7.24zM4.83 8.31l-.1.02h-.05l-.08.01h-.04a1.99 1.99 0 01-.26 0h-.13l-.04-.01a1.9 1.9 0 01-.1-.02l-.06-.01a2 2 0 01-.13-.04h-.02a1.96 1.96 0 01-.42-.2l-.05-.03v.46h2.16v-.46c-.18.12-.37.2-.57.26H4.9l-.08.02zM6.8 11.02c.16 0 .3-.14.3-.3v-.32H1.76v.31c0 .17.14.31.31.31H6.8zM1.24 20.5h6.25v-.96l-1.02-7.1H2.4l-.76 5.28-.4 2.78z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="info">
+		<path d="M23 12.5a10.5 10.5 0 11-21 0 10.5 10.5 0 0121 0zm2 0a12.5 12.5 0 11-25 0 12.5 12.5 0 0125 0zM11.24 5.74h2.38v8.42h-2.38V5.74zm2.18 9.81c.28.26.43.6.43 1.04 0 .44-.15.78-.43 1.03s-.61.38-1 .38c-.38 0-.72-.13-1-.38a1.3 1.3 0 01-.42-1.03c0-.44.14-.78.42-1.04a1.5 1.5 0 011-.37c.39 0 .72.13 1 .37z" fill="#B9D727"/>
+	</symbol>
+
+	<symbol viewBox="0 0 7 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="play">
+		<path fill-rule="nonzero" d="M6.5 3.1a1 1 0 010 1.8L2 7.5a1 1 0 01-1.5-.9V1.4A1 1 0 012 .5l4.5 2.6z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 36 41" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="play-big">
+		<path fill-rule="nonzero" d="M35.2 19.6a1 1 0 010 1.8L2 40.6a1 1 0 01-1.5-.9V1.3A1 1 0 012 .4l33.3 19.2z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="arrow-right">
+		<path fill-rule="nonzero" d="M9.26 12.63c-.52.5-1.34.5-1.86 0a1.26 1.26 0 010-1.84l3.56-3.37.19-.42-.19-.42L7.4 3.2a1.26 1.26 0 010-1.84 1.36 1.36 0 011.86 0l4.98 4.71c.53.5.53 1.34 0 1.84l-4.98 4.71z" fill="#fff"/><path d="M1 7a1 1 0 011-1h10a1 1 0 110 2H2a1 1 0 01-1-1z" fill="#fff"/><path d="M9.26 12.63c-.52.5-1.34.5-1.86 0a1.26 1.26 0 010-1.84l3.56-3.37.19-.42-.19-.42L7.4 3.2a1.26 1.26 0 010-1.84 1.36 1.36 0 011.86 0l4.98 4.71c.53.5.53 1.34 0 1.84l-4.98 4.71z" stroke="#fff"/><path d="M1 7a1 1 0 011-1h10a1 1 0 110 2H2a1 1 0 01-1-1z" stroke="#fff"/>
+	</symbol>
+
+	<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="person-circle">
+		<path fill-rule="nonzero" d="M8 0a8 8 0 100 16A8 8 0 008 0zm5.17 12.2c-.18-.39-.53-.66-1.25-.82-1.53-.36-2.95-.67-2.26-1.97 2.1-3.96.55-6.08-1.66-6.08-2.26 0-3.76 2.2-1.66 6.08.71 1.31-.76 1.62-2.26 1.97-.72.16-1.07.43-1.25.83a6.67 6.67 0 1110.33 0z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="person-circle">
+		<path fill-rule="nonzero" d="M8 0a8 8 0 100 16A8 8 0 008 0zm5.17 12.2c-.18-.39-.53-.66-1.25-.82-1.53-.36-2.95-.67-2.26-1.97 2.1-3.96.55-6.08-1.66-6.08-2.26 0-3.76 2.2-1.66 6.08.71 1.31-.76 1.62-2.26 1.97-.72.16-1.07.43-1.25.83a6.67 6.67 0 1110.33 0z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="phone-circle">
+		<path fill-rule="nonzero" d="M8 1.33a6.67 6.67 0 11-.02 13.35A6.67 6.67 0 018 1.33zM8 0a8 8 0 100 16A8 8 0 008 0zm3 11.54L9.83 9.28l-.7.33c-.74.36-2.26-2.6-1.53-3l.7-.34L7.13 4l-.7.35C4.03 5.6 7.84 13 10.3 11.89l.7-.35z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" id="email-circle">
+		<path fill-rule="nonzero" d="M8 1.33a6.67 6.67 0 11-.02 13.35A6.67 6.67 0 018 1.33zM8 0a8 8 0 100 16A8 8 0 008 0zm0 8.37L4 5.32h8L8 8.37zm0 .86l-4-3.1v4.52h8V6.14L8 9.23z"/>
+	</symbol>
+
+</svg>

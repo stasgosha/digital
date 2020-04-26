@@ -1,0 +1,206 @@
+.teachers-section{
+	padding-bottom: 60px;
+
+	@media screen and (max-width: 575px){
+		.flex-center{
+			.btn{
+				text-align: left;
+				padding-left: 87px;
+				padding-right: 20px;
+			}
+		}
+	}
+}
+
+.teachers-component{
+	padding: 40px 35px;
+	background: #fff;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.11);
+	border-radius: $r;
+	width: calc(100% - 36px * 2);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 58px;
+
+	.cmp-caption{
+		font-size: 24px;
+		line-height: 1.15;
+		margin-bottom: 25px;
+	}
+
+	.cmp-slider{
+		// padding: 0 36px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 40px 30px;
+	}
+
+	@media screen and (max-width: 767px){
+		margin-bottom: 37px;
+
+		.cmp-caption{
+			margin-bottom: 28px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		width: 100%;
+	}
+}
+
+.teacher-card{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.card-header{
+		display: flex;
+		align-items: center;
+		margin-bottom: 13px;
+
+		.card-image{
+			flex: none;
+			margin-right: 15px;
+
+			img{
+				width: 98px;
+				height: 98px;
+				border-radius: 50%;
+				display: block;
+				object-fit: cover;
+				object-position: center center;
+				font-family: 'object-fit: cover; object-position: center center;';
+			}
+		}
+
+		.card-info{
+			p{
+				font-size: 13px;
+				line-height: 1.4;
+				color: #878787;
+			}
+
+			@media screen and (max-width: 991px){
+				max-width: 260px;
+			}
+		}
+
+		.card-caption{
+			font-size: 15px;
+			line-height: 1.4;
+		}
+	}
+
+	.card-content{
+		flex: auto;
+		margin-bottom: 10px;
+
+		p{
+			font-size: 15px;
+			line-height: 1.4;
+		}
+	}
+
+	.card-footer{
+
+	}
+}
+
+.teachers-slider{
+	.slick-slide{
+		outline: none;
+
+		> div{
+			margin-bottom: 10px;
+			height: calc(50% - 5px);
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			.slide{
+				height: 100%;
+			}
+		}
+	}
+
+	// .slide{
+	// 	padding: 0;
+	// 	height: 100%;
+	// }
+
+	@media screen and (max-width: 991px){
+		margin-bottom: 25px !important;
+
+		.slick-dots{
+			bottom: -25px !important;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-top: 0;
+		width: 100%;
+
+		.slide{
+			padding: 0 !important;
+		}
+
+		.slick-dots{
+			display: none !important;
+		}
+
+		.slick-arrow{
+			top: calc(100% + 25px);
+
+			&.slick-prev{
+				left: 0;
+			}
+
+			&.slick-next{
+				right: 0;
+			}
+		}
+	}
+}
+
+.view-video-btn{
+	padding: 6px 8px 6px 12px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #B7B7B7;
+	border-radius: $r;
+
+	.btn-text{
+		font-size: 12px;
+		line-height: 14px;
+		margin-right: 7px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		transition: all $t;
+		font-weight: bold;
+		color: $primary;
+	}
+
+	.btn-icon{
+		width: 7px;
+		height: 8px;
+		fill: $primary;
+		display: block;
+		transition: all $t;
+	}
+
+	&:hover{
+		background: $primary;
+
+		.btn-text{
+			color: #fff;
+		}
+
+		.btn-icon{
+			fill: #fff;
+		}
+	}
+}

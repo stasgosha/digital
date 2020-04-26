@@ -1,0 +1,130 @@
+.for-ceo-section{
+	padding-bottom: 72px;
+
+	.section-inner{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.section-content{
+		width: 640px;
+		margin-left: 30px;
+	}
+
+	.section-left{
+		width: 400px;
+		flex: none;
+	}
+
+	.section-caption{
+		margin-bottom: 50px;
+	}
+
+	.section-text{
+		padding-left: 38px;
+		border-left: 1px solid #c4c4c4;
+		padding-bottom: 11px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 60px;
+
+		.section-inner{
+			flex-direction: column;
+		}
+
+		.section-content{
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 60px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.sc-caption{
+			br{
+				display: none;
+			}
+		}
+
+		.section-text{
+			padding-left: 18px;
+		}
+	}
+
+	@media screen and (max-width: 399px){
+		padding-bottom: 0;
+
+		.section-left{
+			width: calc(100% + 16px * 2);
+			margin-left: -16px;
+			margin-right: -16px;
+		}
+	}
+
+	@media screen and (max-width: 374px){
+		.section-left{
+			width: calc(100% + 10px * 2);
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+	}
+}
+
+.chevron-card{
+	background: linear-gradient(180deg, #7449F6 0%, #4F27CA 100%), #7449F6;
+	color: #fff;
+	padding: 50px 40px 40px;
+	border-radius: $r;
+	position: relative;
+
+	.card-bg{
+		display: block;
+		width: 100%;
+		height: 423px;
+		position: absolute;
+		bottom: 14px;
+		left: 0;
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.card-content{
+		margin-bottom: 215px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.card-footer{
+		position: relative;
+		z-index: 2;
+
+		.btn{
+			width: 100%;
+			white-space: nowrap;
+			padding: 20px;
+		}
+	}
+
+	.card-caption{
+		font-size: 26px;
+		line-height: 30px;
+		margin-bottom: 25px;
+		font-weight: bold;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	@media screen and (max-width: 399px){
+		border-radius: 0;
+		padding: 50px 30px 40px;
+	}
+}

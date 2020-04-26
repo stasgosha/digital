@@ -1,0 +1,189 @@
+// .tpg - typoraphy prefix
+
+body,
+button{
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: $main-font;
+
+	@media screen and (max-width: 767px){
+		font-size: 15px;
+	}
+}
+
+body{
+	color: $text-color;
+}
+
+.tpg{
+	color: $text-color;
+}
+
+.tpg p,
+body .tpg-body-1,
+.tpg-note{
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 1.5em;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 767px){
+		font-size: 15px;
+	}
+}
+
+.section-caption{
+	margin-bottom: 55px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.sc-title{
+		font-size: 55px;
+		line-height: 1.145;
+		font-weight: bold;
+
+		strong{
+			color: $primary;
+		}
+
+		@media screen and (max-width: 1199px){
+			font-size: 40px;
+		}
+
+		@media screen and (max-width: 767px){
+			font-size: 30px;
+		}
+	}
+}
+
+.page-caption{
+	font-size: 47px;
+	line-height: 1;
+	font-weight: bold;
+	color: $text-color;
+	margin-bottom: 25px;
+
+	small{
+		font-size: 18px;
+		line-height: 1;
+		color: $text-light;
+		text-transform: uppercase;
+		display: block;
+	}
+
+	strong{
+		font-size: 174px;
+		line-height: 1;
+		margin-bottom: 10px;
+		transform: translateX(-0.07em);
+		display: block;
+	}
+
+	@media screen and (max-width: 1199px){
+		strong{
+			font-size: 147px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		strong{
+			font-size: 174px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		font-size: 34px;
+		margin-bottom: 18px;
+
+		strong{
+			font-size: 110px;
+		}
+	}
+
+	@media screen and (max-width: 374px){
+		font-size: 27px;
+
+		strong{
+			font-size: 97px;
+		}
+	}
+}
+
+.decor-text{
+	font-size: 23px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 1.135em;
+	text-transform: uppercase;
+	color: #dadada;
+	display: table;
+}
+
+.info-block{
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.block-icon{
+		fill: $accent;
+		margin-right: 7px;
+		width: 25px;
+		height: 25px;
+		display: block;
+		flex: none;
+	}
+
+	.block-text{
+		font-weight: bold;
+	}
+}
+
+.tick-list{
+	li{
+		margin-bottom: 31px;
+		padding-left: 39px;
+		position: relative;
+		font-size: 23px;
+		line-height: 39px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			left: 0;
+			top: 9px;
+			background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M23.33 11.86a2.33 2.33 0 01-.39-2.72 2.32 2.32 0 00-1.54-3.37 2.32 2.32 0 01-1.8-2.08 2.33 2.33 0 00-3.11-2c-.96.35-2.03.03-2.64-.77a2.33 2.33 0 00-3.7 0 2.32 2.32 0 01-2.64.77 2.32 2.32 0 00-3.11 2 2.32 2.32 0 01-1.8 2.08 2.32 2.32 0 00-1.54 3.37c.48.9.32 2-.4 2.72a2.32 2.32 0 00.53 3.66c.9.5 1.36 1.51 1.15 2.5a2.33 2.33 0 002.42 2.8 2.33 2.33 0 012.32 1.49 2.32 2.32 0 003.54 1.04c.82-.6 1.94-.6 2.76 0a2.32 2.32 0 003.55-1.04 2.32 2.32 0 012.31-1.49 2.32 2.32 0 002.42-2.8c-.2-.99.26-2 1.15-2.5a2.33 2.33 0 00.52-3.66zM10.75 17.3l-4.5-4.36 1.86-1.86 2.64 2.5L16.4 7.8l1.86 1.86-7.5 7.64z' fill='%23B9D727'/%3e%3c/svg%3e") no-repeat center center / contain;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		li{
+			font-size: 20px;
+			line-height: 23px;
+			margin-bottom: 22px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&:before{
+				top: -2px;
+			}
+		}
+	}
+}

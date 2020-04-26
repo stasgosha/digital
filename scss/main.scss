@@ -1,0 +1,33 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/assist";
+@import "components/layout";
+@import "components/typography";
+@import "icons";
+
+// Header
+@import "components/header/header";
+
+// Footer
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/sliders";
+@import "components/common/video";
+// @import "components/common/panel";
+@import "components/common/modals";
+@import "components/common/menu-opener";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/for-who-section";
+@import "components/sections/for-ceo-section";
+@import "components/sections/possibilities-section";
+@import "components/sections/get-demo-section";
+@import "components/sections/course-program-section";
+@import "components/sections/teachers-section";
+@import "components/sections/how-it-works-section";
+@import "components/sections/reasons-section";
+@import "components/sections/prices-section";

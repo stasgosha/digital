@@ -1,0 +1,25 @@
+// Fonts
+$main-font: 'Ubuntu', Arial, sans-serif;
+$second-font: 'Gilroy', $main-font;
+// $third-font: 'Playfair Display SC', serif;
+
+// Colors
+$purple: #7449F6;
+$olive: #B9D727;
+
+$dark: #261d17;
+$gray: #2D2D2D;
+$light: #495c6c;
+
+$text-color: $gray;
+$text-dark: $dark;
+$text-light: #6B6B6B;
+
+$primary: $purple;
+$accent: $olive;
+
+// Params
+$body-bg: #fff; // site background
+$t: .3s; // animation duration
+$r: 3px; // default border radius
+$shadow: 0 2px 34px rgba(#153daf, 0.46); // default card shadow
