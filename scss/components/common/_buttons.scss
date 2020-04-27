@@ -75,9 +75,16 @@
 			position: absolute;
 			left: -177px;
 			top: 0;
-			background: url(../img/backgrounds/chevron-button-bg.png) no-repeat center center;
 			background-size: auto 100%;
 			transition: all .5s;
+
+			.webp &{
+				background: url(../img/backgrounds/chevron-button-bg.webp) no-repeat center center;
+			}
+
+			.no-webp &{
+				background: url(../img/backgrounds/chevron-button-bg.png) no-repeat center center;
+			}
 		}
 
 		.btn-text{

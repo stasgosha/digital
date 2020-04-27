@@ -2,6 +2,41 @@
 	padding-top: 70px;
 	background: #F5F5F5;
 
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-decorations{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+
+		.left-decoration{
+			position: absolute;
+			left: -187px;
+			width: 0;
+			top: -150px;
+
+			.decor-text{
+				transform: translateX(-50%) rotate(-90deg);
+			}
+		}
+
+		.right-decoration{
+			position: absolute;
+			right: -160px;
+			top: -170px;
+			width: 0;
+
+			.decor-text{
+				transform: translateX(-50%) rotate(-90deg);
+				transform-origin: center top;
+			}
+		}
+	}
+
 	.section-caption{
 		margin-bottom: 37px;
 	}

@@ -1,11 +1,49 @@
 .for-ceo-section{
 	padding-bottom: 72px;
+	position: relative;
+	z-index: 2;
 
 	.section-inner{
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.container{
+		position: relative;
+	}
+
+	.section-decorations{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+
+		.left-decoration{
+			position: absolute;
+			left: -187px;
+			width: 0;
+			top: 20px;
+
+			.decor-text{
+				white-space: nowrap;
+				transform: translateX(-50%) rotate(-90deg);
+			}
+		}
+
+		.right-decoration{
+			position: absolute;
+			right: -160px;
+			top: 133px;
+			width: 0;
+
+			.decor-text{
+				white-space: nowrap;
+				transform: translateX(-50%) rotate(-90deg);
+				transform-origin: center top;
+			}
+		}
 	}
 
 	.section-content{

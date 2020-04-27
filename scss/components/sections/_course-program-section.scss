@@ -1,6 +1,29 @@
 .course-program-section{
 	padding: 0 0 85px;
 
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-decorations{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+
+		.left-decoration{
+			position: absolute;
+			left: -187px;
+			width: 0;
+			top: 105px;
+
+			.decor-text{
+				transform: translateX(-50%) rotate(-90deg);
+			}
+		}
+	}
+
 	.section-inner{
 		display: flex;
 		justify-content: space-between;

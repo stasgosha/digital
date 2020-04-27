@@ -1,5 +1,30 @@
 .how-it-works-section{
 	padding-bottom: 73px;
+	position: relative;
+
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		width: 351px;
+		height: 721px;
+		position: absolute;
+		background: url(../img/city-business-school.svg) no-repeat center center / contain;
+	}
+
+	&:before{
+		top: 218px;
+		position: absolute;
+		right: 50%;
+		transform: translateX(-745px);
+	}
+
+	&:after{
+		top: -260px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(741px);
+	}
 
 	.section-header{
 		display: flex;

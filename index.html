@@ -5,13 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Digital для руководителей</title>
 
-	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
-	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
-
-	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-
 	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/modernizr.min.js"></script>
 </head>
 <body>
 	<div class="wrapper" id="top">
@@ -29,8 +26,8 @@
 								<li><a href="#program">Программа</a></li>
 								<li><a href="#teachers">Преподаватели</a></li>
 								<li><a href="#how-it-works">Как проходит обучение</a></li>
-								<li><a href="#">Ваши результаты</a></li>
-								<li><a href="#">Диплом</a></li>
+								<li><a href="#results">Ваши результаты</a></li>
+								<li><a href="#diploma">Диплом</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -85,7 +82,7 @@
 			<div class="page-content">
 				<section class="first-screen-section">
 					<picture class="section-bg">
-						<img src="img/backgrounds/first-screen-bg.svg" alt="" class="object-fit-contain">
+						<img data-src="img/backgrounds/first-screen-bg.svg" alt="" class="object-fit-contain lazyload">
 					</picture>
 					<div class="container">
 						<div class="section-decorations">
@@ -140,7 +137,7 @@
 
 				<section class="for-who-section" id="program">
 					<picture class="section-bg">
-						<img src="img/backgrounds/digital.svg" alt="" class="object-fit-contain">
+						<img data-src="img/backgrounds/digital.svg" alt="" class="object-fit-contain lazyload js-aos">
 					</picture>
 					<div class="container">
 						<div class="section-caption">
@@ -220,6 +217,14 @@
 
 				<section class="for-ceo-section">
 					<div class="container">
+						<div class="section-decorations">
+							<div class="left-decoration js-aos">
+								<div class="decor-text">новый подход</div>
+							</div>
+							<div class="right-decoration js-aos" data-speed="0.5">
+								<div class="decor-text">новая специализация</div>
+							</div>
+						</div>
 						<div class="section-inner">
 							<div class="section-content">
 								<div class="section-caption">
@@ -239,11 +244,11 @@
 									<p>На современном рынке труда профессионалы и управленцы, которые разбираются в Digital - <strong>зарабатывают в 2-3 раза больше</strong>.</p>
 								</div>
 							</div>
-							<div class="section-left">
+							<div class="section-left js-aos" data-speed="-0.1">
 								<div class="chevron-card">
 									<picture class="card-bg">
-										<source srcset="img/backgrounds/chevron-card-bg.webp" type="image/webp" />
-										<img src="img/backgrounds/chevron-card-bg.png" alt="" class="object-fit-cover">
+										<source data-srcset="img/backgrounds/chevron-card-bg.webp" type="image/webp" />
+										<img data-src="img/backgrounds/chevron-card-bg.png" alt="" class="object-fit-cover lazyload">
 									</picture>
 									<div class="card-content">
 										<h3 class="card-caption">Хотите быть впереди вместе с компаниями-лидерами?</h3>
@@ -258,9 +263,9 @@
 					</div>
 				</section>
 
-				<section class="possibilities-section">
+				<section class="possibilities-section" id="results">
 					<picture class="section-bg">
-						<img src="img/backgrounds/possibilities-bg.svg" alt="">
+						<img class="lazyload" data-src="img/backgrounds/possibilities-bg.svg" alt="">
 					</picture>
 					<div class="container">
 						<div class="section-caption">
@@ -284,12 +289,12 @@
 					</div>
 				</section>
 
-				<section class="get-demo-section">
+				<section class="get-demo-section js-aos" data-speed="0.15">
 					<div class="container">
 						<div class="section-inner">
 							<picture class="section-bg">
-								<source srcset="img/backgrounds/chevron-card-horizontal-bg.webp" type="image/webp" />
-								<img src="img/backgrounds/chevron-card-horizontal-bg.png" alt="" class="object-fit-cover">
+								<source data-srcset="img/backgrounds/chevron-card-horizontal-bg.webp" type="image/webp" />
+								<img data-src="img/backgrounds/chevron-card-horizontal-bg.png" alt="" class="object-fit-cover lazyload">
 							</picture>
 							<div class="section-content">
 								<p>Digital для руководителей</p>
@@ -306,10 +311,15 @@
 
 				<section class="course-program-section">
 					<div class="container">
+						<div class="section-decorations">
+							<div class="left-decoration js-aos">
+								<div class="decor-text">Программа полного курса</div>
+							</div>
+						</div>
 						<div class="section-inner">
 							<div class="section-left">
 								<div class="section-image">
-									<img src="img/backgrounds/tree-shield.svg" alt="">
+									<img class="lazyload" data-src="img/backgrounds/tree-shield.svg" alt="">
 								</div>
 								<div class="section-caption">
 									<h2 class="sc-title">Программа полного курса</h2>
@@ -331,6 +341,11 @@
 
 				<section class="teachers-section" id="teachers">
 					<div class="container">
+						<div class="section-decorations">
+							<div class="right-decoration js-aos" data-speed="0.5">
+								<div class="decor-text">Преподаватели курса</div>
+							</div>
+						</div>
 						<div class="teachers-component">
 							<h2 class="cmp-caption">Преподаватели курса</h2>
 							<div class="cmp-slider">
@@ -339,7 +354,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/1.jpg" alt="Кира Кузьменко">
+													<source srcset="img/teachers/1@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/1.jpg" alt="Кира Кузьменко">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Кира Кузьменко</h3>
@@ -363,7 +379,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/2.jpg" alt="Варя Семенихина">
+													<source srcset="img/teachers/2@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/2.jpg" alt="Варя Семенихина">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Варя Семенихина</h3>
@@ -387,79 +404,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/4.jpg" alt="Михаил Пашинцев">
-												</picture>
-												<div class="card-info">
-													<h3 class="card-caption">Михаил Пашинцев</h3>
-													<p>Marketing Director Russia & CIS at <strong>VIBER</strong></p>
-												</div>
-											</div>
-											<div class="card-content">
-												<p>“Я научу тебя привлекать и удерживать клиентов с помощью мессенджеров, нативной рекламы, видео- и influence-маркетинга.”</p>
-											</div>
-											<div class="card-footer">
-												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
-													<span class="btn-text">Смотреть видео</span>
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#play"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="teacher-card">
-											<div class="card-header">
-												<picture class="card-image">
-													<img src="img/teachers/5.jpg" alt="Евгения Лампадова">
-												</picture>
-												<div class="card-info">
-													<h3 class="card-caption">Евгения Лампадова</h3>
-													<p>Основатель в <strong>ЛАМПА PR</strong>, ранее PR-директор в <strong>Wikimart Former</strong> и PR-директор в <strong>Skyeng</strong></p>
-												</div>
-											</div>
-											<div class="card-content">
-												<p>“Я научу тебя как сделать так, чтобы о твоей компании узнали все. Даже если у тебя совсем небольшие бюджеты.”</p>
-											</div>
-											<div class="card-footer">
-												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
-													<span class="btn-text">Смотреть видео</span>
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#play"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="teacher-card">
-											<div class="card-header">
-												<picture class="card-image">
-													<img src="img/teachers/6.jpg" alt="Роман Квартальнов">
-												</picture>
-												<div class="card-info">
-													<h3 class="card-caption">Роман Квартальнов</h3>
-													<p>Основатель и CEO дизайн-агентства <strong>ZephyrLab</strong>, преподаватель в <strong>Британской высшей школе дизайна</strong></p>
-												</div>
-											</div>
-											<div class="card-content">
-												<p>“Я научу тебя делать правильную визуализацию, которая соответствует твоей целевой аудитории.”</p>
-											</div>
-											<div class="card-footer">
-												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
-													<span class="btn-text">Смотреть видео</span>
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#play"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="teacher-card">
-											<div class="card-header">
-												<picture class="card-image">
-													<img src="img/teachers/3.jpg" alt="Денис Мартынцев">
+													<source srcset="img/teachers/3@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/3.jpg" alt="Денис Мартынцев">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Денис Мартынцев</h3>
@@ -483,7 +429,83 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/1.jpg" alt="Кира Кузьменко">
+													<source srcset="img/teachers/4@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/4.jpg" alt="Михаил Пашинцев">
+												</picture>
+												<div class="card-info">
+													<h3 class="card-caption">Михаил Пашинцев</h3>
+													<p>Marketing Director Russia & CIS at <strong>VIBER</strong></p>
+												</div>
+											</div>
+											<div class="card-content">
+												<p>“Я научу тебя привлекать и удерживать клиентов с помощью мессенджеров, нативной рекламы, видео- и influence-маркетинга.”</p>
+											</div>
+											<div class="card-footer">
+												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
+													<span class="btn-text">Смотреть видео</span>
+													<svg class="btn-icon">
+														<use xlink:href="img/icons-sprite.svg#play"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="teacher-card">
+											<div class="card-header">
+												<picture class="card-image">
+													<source srcset="img/teachers/5@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/5.jpg" alt="Евгения Лампадова">
+												</picture>
+												<div class="card-info">
+													<h3 class="card-caption">Евгения Лампадова</h3>
+													<p>Основатель в <strong>ЛАМПА PR</strong>, ранее PR-директор в <strong>Wikimart Former</strong> и PR-директор в <strong>Skyeng</strong></p>
+												</div>
+											</div>
+											<div class="card-content">
+												<p>“Я научу тебя как сделать так, чтобы о твоей компании узнали все. Даже если у тебя совсем небольшие бюджеты.”</p>
+											</div>
+											<div class="card-footer">
+												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
+													<span class="btn-text">Смотреть видео</span>
+													<svg class="btn-icon">
+														<use xlink:href="img/icons-sprite.svg#play"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="teacher-card">
+											<div class="card-header">
+												<picture class="card-image">
+													<source srcset="img/teachers/6@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/6.jpg" alt="Роман Квартальнов">
+												</picture>
+												<div class="card-info">
+													<h3 class="card-caption">Роман Квартальнов</h3>
+													<p>Основатель и CEO дизайн-агентства <strong>ZephyrLab</strong>, преподаватель в <strong>Британской высшей школе дизайна</strong></p>
+												</div>
+											</div>
+											<div class="card-content">
+												<p>“Я научу тебя делать правильную визуализацию, которая соответствует твоей целевой аудитории.”</p>
+											</div>
+											<div class="card-footer">
+												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
+													<span class="btn-text">Смотреть видео</span>
+													<svg class="btn-icon">
+														<use xlink:href="img/icons-sprite.svg#play"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="teacher-card">
+											<div class="card-header">
+												<picture class="card-image">
+													<source srcset="img/teachers/1@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/1.jpg" alt="Кира Кузьменко">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Кира Кузьменко</h3>
@@ -507,7 +529,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/2.jpg" alt="Варя Семенихина">
+													<source srcset="img/teachers/2@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/2.jpg" alt="Варя Семенихина">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Варя Семенихина</h3>
@@ -531,7 +554,33 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/4.jpg" alt="Михаил Пашинцев">
+													<source srcset="img/teachers/3@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/3.jpg" alt="Денис Мартынцев">
+												</picture>
+												<div class="card-info">
+													<h3 class="card-caption">Денис Мартынцев</h3>
+													<p>Основатель Grow Horse, эксперт и создатель курсов по <strong>"Growth Hacking"</strong></p>
+												</div>
+											</div>
+											<div class="card-content">
+												<p>“Я помогу тебе выстроить процессы, нацеленные на рост бизнеса и применять на практике инструменты growth-маркетинга.”</p>
+											</div>
+											<div class="card-footer">
+												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
+													<span class="btn-text">Смотреть видео</span>
+													<svg class="btn-icon">
+														<use xlink:href="img/icons-sprite.svg#play"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="teacher-card">
+											<div class="card-header">
+												<picture class="card-image">
+													<source srcset="img/teachers/4@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/4.jpg" alt="Михаил Пашинцев">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Михаил Пашинцев</h3>
@@ -555,7 +604,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/5.jpg" alt="Евгения Лампадова">
+													<source srcset="img/teachers/5@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/5.jpg" alt="Евгения Лампадова">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Евгения Лампадова</h3>
@@ -579,7 +629,8 @@
 										<div class="teacher-card">
 											<div class="card-header">
 												<picture class="card-image">
-													<img src="img/teachers/6.jpg" alt="Роман Квартальнов">
+													<source srcset="img/teachers/6@2x.jpg 2x">
+													<img class="lazyload" data-src="img/teachers/6.jpg" alt="Роман Квартальнов">
 												</picture>
 												<div class="card-info">
 													<h3 class="card-caption">Роман Квартальнов</h3>
@@ -588,30 +639,6 @@
 											</div>
 											<div class="card-content">
 												<p>“Я научу тебя делать правильную визуализацию, которая соответствует твоей целевой аудитории.”</p>
-											</div>
-											<div class="card-footer">
-												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
-													<span class="btn-text">Смотреть видео</span>
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#play"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="teacher-card">
-											<div class="card-header">
-												<picture class="card-image">
-													<img src="img/teachers/3.jpg" alt="Денис Мартынцев">
-												</picture>
-												<div class="card-info">
-													<h3 class="card-caption">Денис Мартынцев</h3>
-													<p>Основатель Grow Horse, эксперт и создатель курсов по <strong>"Growth Hacking"</strong></p>
-												</div>
-											</div>
-											<div class="card-content">
-												<p>“Я помогу тебе выстроить процессы, нацеленные на рост бизнеса и применять на практике инструменты growth-маркетинга.”</p>
 											</div>
 											<div class="card-footer">
 												<button class="view-video-btn" data-video-modal="K5XRprbteF4" data-video-type="youtube">
@@ -642,8 +669,8 @@
 							</div>
 							<div class="watch-video-block">
 								<picture class="block-bg">
-									<source srcset="img/process/video-preview.webp" type="image/webp" />
-									<img src="img/process/video-preview.png" alt="" class="object-fit-contain">
+									<source data-srcset="img/process/video-preview.webp" type="image/webp" />
+									<img data-src="img/process/video-preview.png" alt="" class="object-fit-contain lazyload">
 								</picture>
 								<div class="block-content">
 									<p>Посмотреть как все устроено <br>за <strong>2</strong> минуты</p>
@@ -659,7 +686,7 @@
 								<div class="process-card">
 									<div class="card-header">
 										<picture class="card-icon">
-											<img src="img/process/notebook.svg" alt="">
+											<img class="lazyload" data-src="img/process/notebook.svg" alt="">
 										</picture>
 										<h3 class="card-caption">Просмотр <br>лекций онлайн</h3>
 										<div class="card-number">01</div>
@@ -673,7 +700,7 @@
 								<div class="process-card">
 									<div class="card-header">
 										<picture class="card-icon">
-											<img src="img/process/clock.svg" alt="">
+											<img class="lazyload" data-src="img/process/clock.svg" alt="">
 										</picture>
 										<h3 class="card-caption">Тестирования</h3>
 										<div class="card-number">02</div>
@@ -687,7 +714,7 @@
 								<div class="process-card">
 									<div class="card-header">
 										<picture class="card-icon">
-											<img src="img/process/manager.svg" alt="">
+											<img class="lazyload" data-src="img/process/manager.svg" alt="">
 										</picture>
 										<h3 class="card-caption">Практикумы</h3>
 										<div class="card-number">03</div>
@@ -701,7 +728,7 @@
 								<div class="process-card">
 									<div class="card-header">
 										<picture class="card-icon">
-											<img src="img/process/charts.svg" alt="">
+											<img class="lazyload" data-src="img/process/charts.svg" alt="">
 										</picture>
 										<h3 class="card-caption">Решение кейсов</h3>
 										<div class="card-number">04</div>
@@ -715,8 +742,16 @@
 					</div>
 				</section>
 
-				<section class="reasons-section">
+				<section class="reasons-section" id="diploma">
 					<div class="container">
+						<div class="section-decorations">
+							<div class="left-decoration js-aos">
+								<div class="decor-text">digital</div>
+							</div>
+							<div class="right-decoration js-aos" data-speed="0.5">
+								<div class="decor-text">официальный диплом</div>
+							</div>
+						</div>
 						<div class="section-caption">
 							<h2 class="sc-title">5 причин получить престижное образование в сфере Digital</h2>
 						</div>
@@ -732,28 +767,28 @@
 											<div class="card-content-inner">
 												<div class="card-logos">
 													<div class="item">
-														<img src="img/logos/yandex.png" alt="">
+														<img class="lazyload" data-src="img/logos/yandex.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/qlean.png" alt="">
+														<img class="lazyload" data-src="img/logos/qlean.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/viber.png" alt="">
+														<img class="lazyload" data-src="img/logos/viber.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/biglion.png" alt="">
+														<img class="lazyload" data-src="img/logos/biglion.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/miro.png" alt="">
+														<img class="lazyload" data-src="img/logos/miro.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/new-hr.png" alt="">
+														<img class="lazyload" data-src="img/logos/new-hr.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/alfa-kapital.png" alt="">
+														<img class="lazyload" data-src="img/logos/alfa-kapital.png" alt="">
 													</div>
 													<div class="item">
-														<img src="img/logos/utkonos.png" alt="">
+														<img class="lazyload" data-src="img/logos/utkonos.png" alt="">
 													</div>
 												</div>
 												<p>Разработкой учебной программы занималась команда ведущих специалистов отрасли. Аккумулирован опыт 20+ крупных компаний из разных отраслей</p>
@@ -774,7 +809,7 @@
 														<p><strong>В видеоформате разобраны учебные кейсы, где по шагам показана отработка навыков, данных в учебных модулях.</strong> И сразу же скорректированы возможные ошибки, которые можно допустить в самостоятельной работе.</p>
 													</div>
 													<picture class="block-image">
-														<img src="img/certs/notebook-big.svg" alt="">
+														<img class="lazyload" data-src="img/certs/notebook-big.svg" alt="">
 													</picture>
 												</div>
 											</div>
@@ -796,8 +831,8 @@
 													<div class="item">
 														<div class="cert-card">
 															<picture class="card-image">
-																<source srcset="img/certs/logo-nasdobr.webp" type="image/webp" />
-																<img src="img/certs/logo-nasdobr.png" alt="">
+																<source data-srcset="img/certs/logo-nasdobr.webp" type="image/webp" />
+																<img class="lazyload" data-src="img/certs/logo-nasdobr.png" alt="">
 															</picture>
 															<div class="card-caption">Аккредитация <br>НАСДОБР</div>
 														</div>
@@ -805,8 +840,8 @@
 													<div class="item">
 														<div class="cert-card wide">
 															<picture class="card-image">
-																<source srcset="img/certs/best.webp" type="image/webp" />
-																<img src="img/certs/best.png" alt="">
+																<source data-srcset="img/certs/best.webp" type="image/webp" />
+																<img class="lazyload" data-src="img/certs/best.png" alt="">
 															</picture>
 															<div class="card-caption">Награды City Business School</div>
 														</div>
@@ -880,7 +915,7 @@
 														</ul>
 													</div>
 													<div class="block-image">
-														<img src="img/certs/notebook-speed.svg" alt="">
+														<img class="lazyload" data-src="img/certs/notebook-speed.svg" alt="">
 													</div>
 												</div>
 											</div>
@@ -892,8 +927,8 @@
 						<div class="section-diplomas">
 							<h3>Ваш будущий официальный диплом:</h3>
 							<picture class="diplomas-image">
-								<source srcset="img/certs/diplomas.webp" type="image/webp" />
-								<img src="img/certs/diplomas.png" alt="">
+								<source data-srcset="img/certs/diplomas.webp" type="image/webp" />
+								<img class="lazyload" data-src="img/certs/diplomas.png" alt="">
 							</picture>
 						</div>
 					</div>
@@ -907,7 +942,7 @@
 						<div class="section-inner">
 							<div class="section-content">
 								<div class="section-image">
-									<img src="img/backgrounds/tree-shield.svg" alt="">
+									<img class="lazyload" data-src="img/backgrounds/tree-shield.svg" alt="">
 								</div>
 								<div class="price-card">
 									<div class="card-top">
@@ -943,8 +978,8 @@
 								<div class="contacts-form form">
 									<div class="form-body">
 										<picture class="form-body-bg">
-											<source srcset="img/backgrounds/contacts-form-bg.webp" type="image/webp" />
-											<img src="img/backgrounds/contacts-form-bg.png" alt="">
+											<source data-srcset="img/backgrounds/contacts-form-bg.webp" type="image/webp" />
+											<img class="lazyload" data-src="img/backgrounds/contacts-form-bg.png" alt="">
 										</picture>
 										<form action="#">
 											<h3 class="form-caption">Остались вопросы по программе обучения или условиям зачисления на курс?</h3>
@@ -998,7 +1033,7 @@
 				<div class="footer-inner">
 					<div class="footer-block">
 						<a href="#top" class="footer-logo">
-							<img src="img/footer-logo.svg" alt="">
+							<img class="lazyload" data-src="img/footer-logo.svg" alt="">
 						</a>
 					</div>
 					<div class="footer-block">
@@ -1027,12 +1062,12 @@
 				<div class="contacts-form modal-form form">
 					<div class="form-body">
 						<picture class="form-right-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<picture class="form-left-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<form action="#">
 							<h3 class="form-caption">Получить demo-доступ</h3>
@@ -1085,12 +1120,12 @@
 				<div class="contacts-form modal-form form">
 					<div class="form-body">
 						<picture class="form-right-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<picture class="form-left-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<form action="#">
 							<h3 class="form-caption">Получить бесплатный урок</h3>
@@ -1143,12 +1178,12 @@
 				<div class="contacts-form modal-form form">
 					<div class="form-body">
 						<picture class="form-right-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<picture class="form-left-corner">
-							<source srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
-							<img src="img/backgrounds/modal-corner.png" alt="">
+							<source data-srcset="img/backgrounds/modal-corner.webp" type="image/webp" />
+							<img class="lazyload" data-src="img/backgrounds/modal-corner.png" alt="">
 						</picture>
 						<form action="#">
 							<h3 class="form-caption">Записаться на курс</h3>
@@ -1194,12 +1229,9 @@
 		</div>
 	</div>
 
-	<script src="js/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="//www.youtube.com/iframe_api"></script>
 	<script src="js/scripts.js"></script>
-
-	<!-- <script src="js/jquery.validate.min.js"></script> -->
-	<!-- <script src="js/messages_ru.min.js"></script> -->
 </body>
 </html>
