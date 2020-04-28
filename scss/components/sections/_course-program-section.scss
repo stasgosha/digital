@@ -48,6 +48,14 @@
 		}
 	}
 
+	.full-program-page &{
+		padding-top: 262px;
+
+		@media screen and (max-width: 1199px){
+			padding-top: 172px;
+		}
+	}
+
 	@media screen and (max-width: 991px){
 		padding-bottom: 70px;
 
